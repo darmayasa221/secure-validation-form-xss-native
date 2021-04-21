@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "db_secure");
+$conn = mysqli_connect("sql105.epizy.com", "epiz_28432649", "7Me2dPu2QHa", "epiz_28432649_non_secure");
 
 function query($query)
 {
@@ -38,7 +38,7 @@ function reg($data)
     echo mysqli_error($conn);
   }
   $password = password_hash($password, PASSWORD_DEFAULT);
-  mysqli_query($conn, "INSERT INTO user VALUES('', '$fullName', '$email', '$password', '$confirmPassword')");
+  mysqli_query($conn, "INSERT INTO user VALUES('', '$fullName', '$email', '$password' ");
 
   return mysqli_affected_rows($conn);
 }
