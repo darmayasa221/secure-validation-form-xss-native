@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("sql105.epizy.com", "epiz_28432649", "7Me2dPu2QHa", "epiz_28432649_secure");
+$conn = mysqli_connect("localhost", "root", "", "db_secure_val");
 
 function querysv($query)
 {
